@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ONP-konwerter", "ONP-konwerter.csproj", "{27372A1B-DA40-4BEA-AF39-42420ACC3D3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27372A1B-DA40-4BEA-AF39-42420ACC3D3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27372A1B-DA40-4BEA-AF39-42420ACC3D3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27372A1B-DA40-4BEA-AF39-42420ACC3D3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27372A1B-DA40-4BEA-AF39-42420ACC3D3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
