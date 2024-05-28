@@ -6,10 +6,12 @@ namespace ONP_konwerter
     internal static class Program
     {
         private static string _op;
-        private static Dictionary<char, int> _marksPriorities= new();
+        private static Dictionary<char, int> _marksPriorities = new();
 
-        static List<String> _outPut = new List<string>();
+        static List<string> _ingridients = new List<string>();
         static List<char> _operators = new List<char>();
+        static List<string> _operation = new List<string>();
+        static List<string> _output = new List<string>();
 
         public static void Main(string[] args)
         {
@@ -20,61 +22,71 @@ namespace ONP_konwerter
             ODP(_op);
         }
 
-        
         private static void ODP(string operation)
         {
+            _ingridients.Clear();
+            _operators.Clear();
+            _operation.Clear();
+            _output.Clear();
+            
             SplitSigns(operation);
             PlaceSignsForOdp();
         }
 
         private static void PlaceSignsForOdp()
         {
-            Console.WriteLine("Numbers:");
-            foreach (var item in _outPut)
+            for (int i = 0; i < _ingridients.Count; i++)
             {
-                Console.WriteLine(item);
+                _output.Add(_ingridients[i]);
             }
 
-            Console.WriteLine("Operators:");
-            foreach (var op in _operators)
+            for (int i = _operators.Count - 1; i >= 0; i--)
             {
-                Console.WriteLine(op);
+                if (_operators[i] != ')' && _operators[i] != '(' && _operators[i] != ']' && _operators[i] != '[')
+                {
+                    _output.Add(_operators[i].ToString());
+                }
             }
+
+            Console.WriteLine("Final:");
+            foreach (var item in _output)
+            {
+                Console.Write(item + " ");
+            }
+            Console.WriteLine(); // For better formatting
         }
 
-        private static void SplitSigns(string operation)
+        private static void SplitSigns(string op)
         {
-                
             char lastValue = '\0';
-            string num = null;
+            string num = string.Empty;
 
-            for (int i = 0; i < operation.Length; i++) 
+            for (int i = 0; i < op.Length; i++)
             {
-                char sign = operation[i];
+                char sign = op[i];
 
                 if (_marksPriorities.ContainsKey(sign))
                 {
                     if (!_marksPriorities.ContainsKey(lastValue))
                     {
-                        _outPut.Add(num);
-                        // Console.WriteLine(num);
+                        _ingridients.Add(num);
+                        _operation.Add(num);
                         num = string.Empty;
                     }
                     _operators.Add(sign);
-                    // Console.WriteLine($"{sign}({_marksPriorities[sign]})");
+                    _operation.Add(sign.ToString());
                 }
                 else
                 {
                     num += sign;
-                    if (i == operation.Length- 1)
+                    if (i == op.Length - 1)
                     {
-                        _outPut.Add(num);
-                        // Console.WriteLine(num);
+                        _ingridients.Add(num);
+                        _operation.Add(num);
                     }
                 }
                 lastValue = sign;
             }
-    
         }
 
         private static void DefineDict()
@@ -89,5 +101,4 @@ namespace ONP_konwerter
             _marksPriorities.Add(')', 4);
         }
     }
-    
 }
