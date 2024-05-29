@@ -14,7 +14,7 @@ namespace ONP_konwerter
         {
             bool readable = true;
             DefineDict();
-            Console.WriteLine("Wprowadź działanie:");
+            Console.WriteLine("insert value:");
             _op = Console.ReadLine();
             foreach (var sign in _op)
             {
