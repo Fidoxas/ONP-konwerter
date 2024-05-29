@@ -6,86 +6,109 @@ namespace ONP_konwerter
     internal static class Program
     {
         private static string _op;
-        private static Dictionary<char, int> _marksPriorities = new();
-
-        static List<string> _ingridients = new List<string>();
-        static List<char> _operators = new List<char>();
-        static List<string> _operation = new List<string>();
+        private static Dictionary<char, int> _marksPriorities = new Dictionary<char, int>();
+        static Stack<char> _operators = new Stack<char>();
         static List<string> _output = new List<string>();
 
         public static void Main(string[] args)
         {
+            bool readable = true;
             DefineDict();
-            Console.WriteLine("Wprowadź działanie");
+            Console.WriteLine("Wprowadź działanie:");
             _op = Console.ReadLine();
+            foreach (var sign in _op)
+            {
+                if (!char.IsDigit(sign) && !_marksPriorities.ContainsKey(sign))
+                {
+                    readable = false;
+                }
+            }
 
-            ODP(_op);
+            if (readable)
+            {
+                ODP(_op);
+                
+                Console.WriteLine("Final:");
+                foreach (var item in _output)
+                {
+                    Console.Write(item + " ");
+                }
+                Console.WriteLine(); 
+            }
+            else
+            {
+                Console.WriteLine("i can't use those values.You could use only digits and operators:");
+                foreach (var op in _marksPriorities)
+                {
+                    Console.Write(op.Key + " ");
+                }
+            }
         }
 
         private static void ODP(string operation)
         {
-            _ingridients.Clear();
-            _operators.Clear();
-            _operation.Clear();
             _output.Clear();
-            
-            SplitSigns(operation);
-            PlaceSignsForOdp();
+            PrerpareOperation(operation);
         }
 
-        private static void PlaceSignsForOdp()
+        private static void PrerpareOperation(string operation)
         {
-            for (int i = 0; i < _ingridients.Count; i++)
-            {
-                _output.Add(_ingridients[i]);
-            }
-
-            for (int i = _operators.Count - 1; i >= 0; i--)
-            {
-                if (_operators[i] != ')' && _operators[i] != '(' && _operators[i] != ']' && _operators[i] != '[')
-                {
-                    _output.Add(_operators[i].ToString());
-                }
-            }
-
-            Console.WriteLine("Final:");
-            foreach (var item in _output)
-            {
-                Console.Write(item + " ");
-            }
-            Console.WriteLine(); // For better formatting
-        }
-
-        private static void SplitSigns(string op)
-        {
-            char lastValue = '\0';
             string num = string.Empty;
 
-            for (int i = 0; i < op.Length; i++)
+            for (int i = 0; i < operation.Length; i++)
             {
-                char sign = op[i];
+                char sign = operation[i];
 
                 if (_marksPriorities.ContainsKey(sign))
                 {
-                    if (!_marksPriorities.ContainsKey(lastValue))
+                    if (!string.IsNullOrEmpty(num))
                     {
-                        _ingridients.Add(num);
-                        _operation.Add(num);
+                        _output.Add(num);
                         num = string.Empty;
                     }
-                    _operators.Add(sign);
-                    _operation.Add(sign.ToString());
+
+                    HandleOperator(sign);
                 }
                 else
                 {
                     num += sign;
-                    if (i == op.Length - 1)
+                    if (i == operation.Length - 1)
                     {
-                        _ingridients.Add(num);
-                        _operation.Add(num);
+                        _output.Add(num);
                     }
                 }
-                lastValue = sign;
+
+            }
+
+            while (_operators.Count > 0)
+            {
+                _output.Add(_operators.Pop().ToString());
+            }
+        }
+
+        private static void HandleOperator(char op)
+        {
+            if (op == '(' || op == '[')
+            {
+                _operators.Push(op);
+            }
+            else if (op == ')'|| op == ']')
+            {
+                while (_operators.Peek() != '(' &&  _operators.Peek() != '[')
+                {
+                    _output.Add(_operators.Pop().ToString());
+                }
+                _operators.Pop(); 
+            }
+            else
+            {
+                while (_operators.Count > 0 && _marksPriorities[_operators.Peek()] >= _marksPriorities[op])
+                {
+                    _output.Add(_operators.Peek().ToString());
+                    _operators.Pop();
+                }
+                Console.WriteLine("dodano operator: " + op);
+                _operators.Push(op);
             }
         }
 
@@ -95,10 +118,10 @@ namespace ONP_konwerter
             _marksPriorities.Add('+', 1);
             _marksPriorities.Add('*', 2);
             _marksPriorities.Add('/', 2);
-            _marksPriorities.Add('[', 3);
-            _marksPriorities.Add(']', 3);
-            _marksPriorities.Add('(', 4);
-            _marksPriorities.Add(')', 4);
+            _marksPriorities.Add('(', 0); 
+            _marksPriorities.Add(')', 0);
+            _marksPriorities.Add(']', 0);
+            _marksPriorities.Add('[', 0);
         }
     }
 }
