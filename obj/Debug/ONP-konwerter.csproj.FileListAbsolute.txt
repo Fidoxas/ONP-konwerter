@@ -4,3 +4,4 @@ C:\Users\Fxsas\RiderProjects\ONP-konwerter\obj\Debug\ONP-konwerter.csproj.Assemb
 C:\Users\Fxsas\RiderProjects\ONP-konwerter\obj\Debug\ONP-konwerter.csproj.CoreCompileInputs.cache
 C:\Users\Fxsas\RiderProjects\ONP-konwerter\obj\Debug\ONP_konwerter.exe
 C:\Users\Fxsas\RiderProjects\ONP-konwerter\obj\Debug\ONP_konwerter.pdb
+C:\Users\Fxsas\RiderProjects\ONP-konwerter\obj\Debug\ONP-konwerter.csproj.SuggestedBindingRedirects.cache

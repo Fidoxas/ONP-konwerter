@@ -12,10 +12,21 @@ namespace ONP_konwerter
 
         public static void Main(string[] args)
         {
-            bool readable = true;
+            Prepare();
+            ReadEquation();
+           
+        }
+
+        private static void Prepare()
+        {
             DefineDict();
             Console.WriteLine("insert value:");
             _op = Console.ReadLine();
+        }
+
+        private static void ReadEquation()
+        {
+            bool readable = true;
             foreach (var sign in _op)
             {
                 if (!char.IsDigit(sign) && !_marksPriorities.ContainsKey(sign))
@@ -23,7 +34,6 @@ namespace ONP_konwerter
                     readable = false;
                 }
             }
-
             if (readable)
             {
                 ODP(_op);
