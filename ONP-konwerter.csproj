@@ -41,8 +41,16 @@
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
+        <Compile Include="Scripts\Converter.cs" />
+        <Compile Include="Scripts\EqualitionDefiner.cs" />
+        <Compile Include="Scripts\EqualitionReader.cs" />
+        <Compile Include="Scripts\InputChecker.cs" />
+        <Compile Include="Scripts\InputReader.cs" />
+        <Compile Include="Scripts\Program.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include=".gitignore" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
