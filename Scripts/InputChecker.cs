@@ -1,22 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace ONP_konwerter.Scripts
 {
     public class InputChecker
     {
         private Dictionary<char, int> _dict = EqualitionDefiner.MarksPriorities;
-        private string op = InputReader.Op;
 
-        public bool AccetableOperation()
+        public bool AccetableOperation(string operation)
         {
-            if (string.IsNullOrEmpty(op))
+            if (string.IsNullOrEmpty(operation))
             {
                 return false;
             }
-            foreach (var sign in op)
+            foreach (var sign in operation)
             {
-                if (!isAcceptable(sign))
+                if (!IsAcceptable(sign))
                 {
                     return false;
                 }
@@ -25,9 +25,21 @@ namespace ONP_konwerter.Scripts
             return true;
         }
 
-        private bool isAcceptable(char a)
+        private bool IsAcceptable(char a)
         {
-            return _dict.ContainsKey(a) || char.IsDigit(a);
+            if( _dict.ContainsKey(a))
+            {
+                return true;
+            }
+            else if (char.IsDigit(a))
+            {
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("I Dont understand " + a);
+                return false;
+            }
         }
 
         public void PrintAllowedOperators()

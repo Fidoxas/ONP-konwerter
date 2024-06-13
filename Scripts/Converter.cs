@@ -11,9 +11,8 @@ namespace ONP_konwerter.Properties
 
         public List<string> Output => _output;
 
-        public void PrerpareOperation()
+        public void PrerpareOperation(string operation)
         {
-            string operation = InputReader.Op;
             string num = string.Empty;
 
             for (int i = 0; i < operation.Length; i++)

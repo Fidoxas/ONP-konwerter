@@ -4,7 +4,7 @@ namespace ONP_konwerter
 {
     public class InputReader
     {
-        public static string Op { get; private set; }
+        public string Op { get; private set; }
 
         public void TakeOp()
         {

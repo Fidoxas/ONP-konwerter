@@ -14,12 +14,13 @@ namespace ONP_konwerter
             Converter converter = new Converter();
             EqualitionReader er = new EqualitionReader();
 
-            inputReader.TakeOp();
             definer.DefineDict();
+            inputReader.TakeOp();
+            Console.WriteLine("your operation "+ inputReader.Op);
 
-            if (inputChecker.AccetableOperation())
+            if (inputChecker.AccetableOperation(inputReader.Op))
             {
-                converter.PrerpareOperation();
+                converter.PrerpareOperation(inputReader.Op);
                 er.ReadEquation(converter.Output);
             }
             else
