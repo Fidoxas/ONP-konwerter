@@ -7,8 +7,6 @@ namespace ONP_konwerter
 {
     internal static class Program
     {
-        private static string Op;
-        private static List<string> _output;
 
         private static void Main(string[] args)
         {
@@ -19,13 +17,13 @@ namespace ONP_konwerter
             EqualitionReader er = new EqualitionReader();
 
             definer.DefineDict();
-            Op = inputReader.TakeOp();
-            Console.WriteLine("your operation "+ Op);
+            var op = inputReader.TakeOp();
+            Console.WriteLine("your operation "+ op);
 
-            if (inputChecker.AccetableOperation(Op))
+            if (inputChecker.AccetableOperation(op))
             {
-                _output = converter.PrerpareOperation(Op);
-                er.ReadEquation(_output);
+                var output = converter.PrerpareOperation(op);
+                er.ReadEquation(output);
             }
             else
             {
