@@ -11,7 +11,7 @@ namespace ONP_konwerter.Properties
 
         public List<string> Output => _output;
 
-        public void PrerpareOperation(string operation)
+        public List<string> PrerpareOperation(string operation)
         {
             string num = string.Empty;
 
@@ -43,6 +43,8 @@ namespace ONP_konwerter.Properties
             {
                 _output.Add(_operators.Pop().ToString());
             }
+
+            return _output;
         }
 
         private void HandleOperator(char op)

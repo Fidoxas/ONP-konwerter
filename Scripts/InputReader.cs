@@ -4,12 +4,13 @@ namespace ONP_konwerter
 {
     public class InputReader
     {
-        public string Op { get; private set; }
+        private string Op;
 
-        public void TakeOp()
+        public string TakeOp()
         {
             Console.WriteLine("Insert value:");
             Op = Console.ReadLine();
+            return Op;
         }
     }
 }

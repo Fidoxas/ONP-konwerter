@@ -7,7 +7,7 @@ namespace ONP_konwerter.Scripts
     {
         public void ReadEquation(List<string> output)
         {
-            Console.WriteLine("Final:");
+            Console.WriteLine("Final: ");
             foreach (var item in output)
             {
                 Console.Write(item + " ");

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using ONP_konwerter.Properties;
 using ONP_konwerter.Scripts;
 
@@ -6,6 +7,7 @@ namespace ONP_konwerter
 {
     internal static class Program
     {
+
         private static void Main(string[] args)
         {
             InputReader inputReader = new InputReader();
@@ -15,13 +17,13 @@ namespace ONP_konwerter
             EqualitionReader er = new EqualitionReader();
 
             definer.DefineDict();
-            inputReader.TakeOp();
-            Console.WriteLine("your operation "+ inputReader.Op);
+            var op = inputReader.TakeOp();
+            Console.WriteLine("your operation "+ op);
 
-            if (inputChecker.AccetableOperation(inputReader.Op))
+            if (inputChecker.AccetableOperation(op))
             {
-                converter.PrerpareOperation(inputReader.Op);
-                er.ReadEquation(converter.Output);
+                var output = converter.PrerpareOperation(op);
+                er.ReadEquation(output);
             }
             else
             {
