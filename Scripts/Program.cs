@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using ONP_konwerter.Properties;
 using ONP_konwerter.Scripts;
 
 namespace ONP_konwerter

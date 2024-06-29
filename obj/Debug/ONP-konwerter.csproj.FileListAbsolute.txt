@@ -5,3 +5,9 @@ C:\Users\Fxsas\RiderProjects\ONP-konwerter\obj\Debug\ONP-konwerter.csproj.CoreCo
 C:\Users\Fxsas\RiderProjects\ONP-konwerter\obj\Debug\ONP_konwerter.exe
 C:\Users\Fxsas\RiderProjects\ONP-konwerter\obj\Debug\ONP_konwerter.pdb
 C:\Users\Fxsas\RiderProjects\ONP-konwerter\obj\Debug\ONP-konwerter.csproj.SuggestedBindingRedirects.cache
+C:\Users\fxsas\OneDrive\Dokumenty\GitHub\ONP-konwerter\bin\Debug\ONP_konwerter.exe
+C:\Users\fxsas\OneDrive\Dokumenty\GitHub\ONP-konwerter\bin\Debug\ONP_konwerter.pdb
+C:\Users\fxsas\OneDrive\Dokumenty\GitHub\ONP-konwerter\obj\Debug\ONP-konwerter.csproj.AssemblyReference.cache
+C:\Users\fxsas\OneDrive\Dokumenty\GitHub\ONP-konwerter\obj\Debug\ONP-konwerter.csproj.CoreCompileInputs.cache
+C:\Users\fxsas\OneDrive\Dokumenty\GitHub\ONP-konwerter\obj\Debug\ONP_konwerter.exe
+C:\Users\fxsas\OneDrive\Dokumenty\GitHub\ONP-konwerter\obj\Debug\ONP_konwerter.pdb

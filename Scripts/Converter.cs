@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ONP_konwerter.Properties
+namespace ONP_konwerter.Scripts
 {
     public class Converter
     {
