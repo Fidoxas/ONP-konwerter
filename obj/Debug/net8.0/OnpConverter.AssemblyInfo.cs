@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("TestProject1")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("OnpConverter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ecb39b39fc82a0cb32e32311bbb30c01a6d0288d")]
-[assembly: System.Reflection.AssemblyProductAttribute("TestProject1")]
-[assembly: System.Reflection.AssemblyTitleAttribute("TestProject1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyProductAttribute("OnpConverter")]
+[assembly: System.Reflection.AssemblyTitleAttribute("OnpConverter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Wygenerowane przez klasę WriteCodeFragment programu MSBuild.
