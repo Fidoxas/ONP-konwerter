@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ONP-konwerter", "ONP-konwerter.csproj", "{27372A1B-DA40-4BEA-AF39-42420ACC3D3A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "UNITTESTS\TestProject1\TestProject1.csproj", "{A520E203-E226-4B43-B48C-2C6D64558C0F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,11 @@ Global
 		{27372A1B-DA40-4BEA-AF39-42420ACC3D3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27372A1B-DA40-4BEA-AF39-42420ACC3D3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27372A1B-DA40-4BEA-AF39-42420ACC3D3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A520E203-E226-4B43-B48C-2C6D64558C0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A520E203-E226-4B43-B48C-2C6D64558C0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A520E203-E226-4B43-B48C-2C6D64558C0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A520E203-E226-4B43-B48C-2C6D64558C0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 EndGlobal

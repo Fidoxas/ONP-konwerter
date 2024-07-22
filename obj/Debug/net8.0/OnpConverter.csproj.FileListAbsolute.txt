@@ -1,0 +1,14 @@
+C:\Users\fxsas\RiderProjects\Onp\OnpConverter\bin\Debug\net8.0\OnpConverter.exe
+C:\Users\fxsas\RiderProjects\Onp\OnpConverter\bin\Debug\net8.0\OnpConverter.deps.json
+C:\Users\fxsas\RiderProjects\Onp\OnpConverter\bin\Debug\net8.0\OnpConverter.runtimeconfig.json
+C:\Users\fxsas\RiderProjects\Onp\OnpConverter\bin\Debug\net8.0\OnpConverter.dll
+C:\Users\fxsas\RiderProjects\Onp\OnpConverter\bin\Debug\net8.0\OnpConverter.pdb
+C:\Users\fxsas\RiderProjects\Onp\OnpConverter\obj\Debug\net8.0\OnpConverter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fxsas\RiderProjects\Onp\OnpConverter\obj\Debug\net8.0\OnpConverter.AssemblyInfoInputs.cache
+C:\Users\fxsas\RiderProjects\Onp\OnpConverter\obj\Debug\net8.0\OnpConverter.AssemblyInfo.cs
+C:\Users\fxsas\RiderProjects\Onp\OnpConverter\obj\Debug\net8.0\OnpConverter.csproj.CoreCompileInputs.cache
+C:\Users\fxsas\RiderProjects\Onp\OnpConverter\obj\Debug\net8.0\OnpConverter.dll
+C:\Users\fxsas\RiderProjects\Onp\OnpConverter\obj\Debug\net8.0\refint\OnpConverter.dll
+C:\Users\fxsas\RiderProjects\Onp\OnpConverter\obj\Debug\net8.0\OnpConverter.pdb
+C:\Users\fxsas\RiderProjects\Onp\OnpConverter\obj\Debug\net8.0\OnpConverter.genruntimeconfig.cache
+C:\Users\fxsas\RiderProjects\Onp\OnpConverter\obj\Debug\net8.0\ref\OnpConverter.dll
