@@ -1,4 +1,6 @@
-﻿namespace ONP_konwerter;
+﻿using System;
+
+namespace ONP_konwerter;
 
 public class InputReader
 {

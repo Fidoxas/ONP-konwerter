@@ -1,4 +1,6 @@
-﻿namespace ONP_konwerter;
+﻿using System.Collections.Generic;
+
+namespace ONP_konwerter;
 
 public class EqualitionDefiner
 {

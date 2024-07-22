@@ -1,4 +1,5 @@
-﻿using ONP_konwerter;
+﻿using System;
+using ONP_konwerter;
 
 var inputReader = new InputReader();
 var definer = new EqualitionDefiner();

@@ -1,4 +1,7 @@
-﻿namespace ONP_konwerter;
+﻿using System;
+using System.Collections.Generic;
+
+namespace ONP_konwerter;
 
 public class Converter
 {
