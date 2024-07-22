@@ -1,0 +1,140 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/robson/projects/github/ONP-konwerter/UNITTESTS/TestProject1/TestProject1.csproj": {}
+  },
+  "projects": {
+    "/home/robson/projects/github/ONP-konwerter/ONP-konwerter/ONP-konwerter.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/robson/projects/github/ONP-konwerter/ONP-konwerter/ONP-konwerter.csproj",
+        "projectName": "ONP-konwerter",
+        "projectPath": "/home/robson/projects/github/ONP-konwerter/ONP-konwerter/ONP-konwerter.csproj",
+        "packagesPath": "/home/robson/.nuget/packages/",
+        "outputPath": "/home/robson/projects/github/ONP-konwerter/ONP-konwerter/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/robson/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.104/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/robson/projects/github/ONP-konwerter/UNITTESTS/TestProject1/TestProject1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/robson/projects/github/ONP-konwerter/UNITTESTS/TestProject1/TestProject1.csproj",
+        "projectName": "TestProject1",
+        "projectPath": "/home/robson/projects/github/ONP-konwerter/UNITTESTS/TestProject1/TestProject1.csproj",
+        "packagesPath": "/home/robson/.nuget/packages/",
+        "outputPath": "/home/robson/projects/github/ONP-konwerter/UNITTESTS/TestProject1/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/robson/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/robson/projects/github/ONP-konwerter/ONP-konwerter/ONP-konwerter.csproj": {
+                "projectPath": "/home/robson/projects/github/ONP-konwerter/ONP-konwerter/ONP-konwerter.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.14.0, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.9.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.104/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
