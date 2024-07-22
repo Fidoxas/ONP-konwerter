@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ONP-konwerter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8c341b45b0d80fa3bfa1319c9da1624231fc6e6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d88e2e398fb13e7c24dec77655d83df6f16952f0")]
 [assembly: System.Reflection.AssemblyProductAttribute("ONP-konwerter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ONP-konwerter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

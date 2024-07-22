@@ -1,16 +1,13 @@
-﻿using System;
+﻿namespace ONP_konwerter;
 
-namespace ONP_konwerter
+public class InputReader
 {
-    public class InputReader
-    {
-        private string Op;
+    private string Op;
 
-        public string TakeOp()
-        {
-            Console.WriteLine("Insert value:");
-            Op = Console.ReadLine();
-            return Op;
-        }
+    public string TakeOp()
+    {
+        Console.WriteLine("Insert value:");
+        Op = Console.ReadLine();
+        return Op;
     }
 }

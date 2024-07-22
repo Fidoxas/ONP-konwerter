@@ -1,55 +1,52 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿namespace ONP_konwerter;
 
-namespace ONP_konwerter.Scripts
+public class InputChecker
 {
-    public class InputChecker
-    {
-        private Dictionary<char, int> _dict = EqualitionDefiner.MarksPriorities;
+    private Dictionary<char, int> _dict = EqualitionDefiner.MarksPriorities;
 
-        public bool AccetableOperation(string operation)
+    public bool AccetableOperation(string operation)
+    {
+        if (string.IsNullOrEmpty(operation))
         {
-            if (string.IsNullOrEmpty(operation))
+            return false;
+        }
+
+        foreach (var sign in operation)
+        {
+            if (!IsAcceptable(sign))
             {
                 return false;
             }
-            foreach (var sign in operation)
-            {
-                if (!IsAcceptable(sign))
-                {
-                    return false;
-                }
-            }
+        }
 
+        return true;
+    }
+
+    private bool IsAcceptable(char a)
+    {
+        if (_dict.ContainsKey(a))
+        {
             return true;
         }
-
-        private bool IsAcceptable(char a)
+        else if (char.IsDigit(a))
         {
-            if( _dict.ContainsKey(a))
-            {
-                return true;
-            }
-            else if (char.IsDigit(a))
-            {
-                return true;
-            }
-            else
-            {
-                Console.WriteLine("I Dont understand " + a);
-                return false;
-            }
+            return true;
+        }
+        else
+        {
+            Console.WriteLine("I Dont understand " + a);
+            return false;
+        }
+    }
+
+    public void PrintAllowedOperators()
+    {
+        Console.WriteLine("You need to use only digits or one of these operators: ");
+        foreach (var op in _dict)
+        {
+            Console.Write(op.Key + " ");
         }
 
-        public void PrintAllowedOperators()
-        {
-            Console.WriteLine("You need to use only digits or one of these operators: ");
-            foreach (var op in _dict)
-            {
-                Console.Write(op.Key + " ");
-            }
-            Console.WriteLine();
-        }
+        Console.WriteLine();
     }
 }

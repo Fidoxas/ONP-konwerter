@@ -1,5 +1,4 @@
 ﻿using ONP_konwerter;
-using ONP_konwerter.Scripts;
 
 var inputReader = new InputReader();
 var definer = new EqualitionDefiner();
