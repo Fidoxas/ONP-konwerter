@@ -1,33 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using ONP_konwerter.Scripts;
+using ONP_konwerter;
 
-namespace ONP_konwerter
+var inputReader = new InputReader();
+var inputChecker = new InputChecker();
+var converter = new Converter();
+var er = new EqualitionReader();
+
+var op = inputReader.TakeOp();
+Console.WriteLine("your operation " + op);
+
+if (inputChecker.AccetableOperation(op))
 {
-    internal static class Program
-    {
-
-        private static void Main(string[] args)
-        {
-            InputReader inputReader = new InputReader();
-            EqualitionDefiner definer = new EqualitionDefiner();
-            InputChecker inputChecker = new InputChecker();
-            Converter converter = new Converter();
-            EqualitionReader er = new EqualitionReader();
-
-            definer.DefineDict();
-            var op = inputReader.TakeOp();
-            Console.WriteLine("your operation "+ op);
-
-            if (inputChecker.AccetableOperation(op))
-            {
-                var output = converter.PrerpareOperation(op);
-                er.ReadEquation(output);
-            }
-            else
-            {
-                inputChecker.PrintAllowedOperators();
-            }
-        }
-    }
+    var output = converter.PrerpareOperation(op);
+    er.ReadEquation(output);
+}
+else
+{
+    inputChecker.PrintAllowedOperators();
 }
