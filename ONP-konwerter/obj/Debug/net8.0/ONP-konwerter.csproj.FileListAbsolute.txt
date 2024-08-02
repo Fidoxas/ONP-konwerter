@@ -1,0 +1,15 @@
+C:\Users\Fxsas\RiderProjects\ONP-konwerter\ONP-konwerter\bin\Debug\net8.0\ONP-konwerter.exe
+C:\Users\Fxsas\RiderProjects\ONP-konwerter\ONP-konwerter\bin\Debug\net8.0\ONP-konwerter.deps.json
+C:\Users\Fxsas\RiderProjects\ONP-konwerter\ONP-konwerter\bin\Debug\net8.0\ONP-konwerter.runtimeconfig.json
+C:\Users\Fxsas\RiderProjects\ONP-konwerter\ONP-konwerter\bin\Debug\net8.0\ONP-konwerter.dll
+C:\Users\Fxsas\RiderProjects\ONP-konwerter\ONP-konwerter\bin\Debug\net8.0\ONP-konwerter.pdb
+C:\Users\Fxsas\RiderProjects\ONP-konwerter\ONP-konwerter\obj\Debug\net8.0\ONP-konwerter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fxsas\RiderProjects\ONP-konwerter\ONP-konwerter\obj\Debug\net8.0\ONP-konwerter.AssemblyInfoInputs.cache
+C:\Users\Fxsas\RiderProjects\ONP-konwerter\ONP-konwerter\obj\Debug\net8.0\ONP-konwerter.AssemblyInfo.cs
+C:\Users\Fxsas\RiderProjects\ONP-konwerter\ONP-konwerter\obj\Debug\net8.0\ONP-konwerter.csproj.CoreCompileInputs.cache
+C:\Users\Fxsas\RiderProjects\ONP-konwerter\ONP-konwerter\obj\Debug\net8.0\ONP-konwerter.sourcelink.json
+C:\Users\Fxsas\RiderProjects\ONP-konwerter\ONP-konwerter\obj\Debug\net8.0\ONP-konwerter.dll
+C:\Users\Fxsas\RiderProjects\ONP-konwerter\ONP-konwerter\obj\Debug\net8.0\refint\ONP-konwerter.dll
+C:\Users\Fxsas\RiderProjects\ONP-konwerter\ONP-konwerter\obj\Debug\net8.0\ONP-konwerter.pdb
+C:\Users\Fxsas\RiderProjects\ONP-konwerter\ONP-konwerter\obj\Debug\net8.0\ONP-konwerter.genruntimeconfig.cache
+C:\Users\Fxsas\RiderProjects\ONP-konwerter\ONP-konwerter\obj\Debug\net8.0\ref\ONP-konwerter.dll
