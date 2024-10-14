@@ -18,6 +18,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\ONP-konwerter.csproj" />
       <ProjectReference Include="..\ONP-konwerter\ONP-konwerter.csproj" />
     </ItemGroup>
 
